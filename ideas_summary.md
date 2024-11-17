@@ -224,3 +224,12 @@ ps: 指标数据集 `owid-covid-data.csv`, 政策数据集 `OxCGRT_compact_natio
 - **美国**：不同气候区与传播速率的关联。
 - **印度**：气候对农村和城市传播的不同影响。
 
+## Guo Wei
+1. new_deaths_per_million vs hosp_patients_per_million, excess_mortality_cumulative_per_million
+Official covid data might underestimate the real death number and the impact to healthcare system
+
+2. new_tests_smoothed_per_thousand, positive_rate vs (new_deaths_per_million / excess_mortality_cumulative_per_million)
+High test coverage and low positive rate should produce accurate estimate of death from covid
+
+3. StringencyIndex_Average, new_cases_per_million vs excess_mortality_cumulative_per_million
+Low prevalence of covid with some level of restrictions might correlate to negative excess mortality
