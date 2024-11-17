@@ -99,11 +99,7 @@ ps: 指标数据集 `owid-covid-data.csv`, 政策数据集 `OxCGRT_compact_natio
 
 ## Cheng Yaoyu
 
-根据您计划分析的四个国家（中国、新加坡、美国、印度）的特点，可以细化我之前提供的十条建议，从政策、资源、人口结构、和防疫策略等角度进行针对性分析。以下是整合后的可视化策略、分析思路和细分建议。
-
----
-
-### **1. 不同年龄段疫苗接种覆盖率与死亡率的关系**
+### 1. 不同年龄段疫苗接种覆盖率与死亡率的关系**
 #### **可视化策略**：
 - **折线图**：时间为 X 轴，不同年龄段的疫苗接种覆盖率（`people_vaccinated_per_hundred`）和死亡率（`total_deaths_per_million`）分别作为两条折线。
 - **分组国家**：中国、新加坡、美国、印度。
@@ -226,10 +222,21 @@ ps: 指标数据集 `owid-covid-data.csv`, 政策数据集 `OxCGRT_compact_natio
 
 ## Guo Wei
 1. new_deaths_per_million vs hosp_patients_per_million, excess_mortality_cumulative_per_million
-Official covid data might underestimate the real death number and the impact to healthcare system
+  Official covid data might underestimate the real death number and the impact to healthcare system
 
 2. new_tests_smoothed_per_thousand, positive_rate vs (new_deaths_per_million / excess_mortality_cumulative_per_million)
-High test coverage and low positive rate should produce accurate estimate of death from covid
+  High test coverage and low positive rate should produce accurate estimate of death from covid
 
 3. StringencyIndex_Average, new_cases_per_million vs excess_mortality_cumulative_per_million
-Low prevalence of covid with some level of restrictions might correlate to negative excess mortality
+  Low prevalence of covid with some level of restrictions might correlate to negative excess mortality
+
+**Translation**
+
+1. 每百万人新增死亡数 vs 每百万人住院患者数、累计超额死亡数  
+   官方的新冠数据可能低估了实际死亡人数以及对医疗系统的影响。
+
+2. 每千人平滑新增检测数、阳性率 vs （每百万人新增死亡数 / 每百万人累计超额死亡数）  
+   较高的检测覆盖率和较低的阳性率应能准确估算因新冠导致的死亡人数。
+
+3. 平均严格指数、每百万人新增病例数 vs 每百万人累计超额死亡数  
+   新冠疫情的低流行率与一定程度的限制措施可能与负的超额死亡率相关。
